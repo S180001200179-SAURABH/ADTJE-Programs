@@ -1,0 +1,55 @@
+Console code execution sequence for JUnit Test for addingCategory() and gettingcatagory() methods of CategoryDAOImplement class:
+
+
+
+Feb 08, 2018 5:52:31 PM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@707f7052: startup date [Thu Feb 08 17:52:31 IST 2018]; root of context hierarchy
+Feb 08, 2018 5:52:31 PM org.springframework.beans.factory.support.DefaultListableBeanFactory registerBeanDefinition
+INFO: Overriding bean definition for bean 'categoryDAO' with a different definition: replacing [Generic bean: class [com.niit.dao.CategoryDAOImplement]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [J:\NIIT - JAVA\Java Digi-Next\SaurabhKr Patna ADTJE Programs ID-S180001200179\MAVEN\MAVEN-1\BackendQuickStart\target\classes\com\niit\dao\CategoryDAOImplement.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=DBConfig; factoryMethodName=getCategoryDAO; initMethodName=null; destroyMethodName=(inferred); defined in com.niit.config.DBConfig]
++++++ Do database manipulation of Category as CatogoryDAO has been enabled now!! +++++
+
+
+Feb 08, 2018 5:52:31 PM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
+INFO: Loaded JDBC driver: org.h2.Driver
+-------->  Data Source is now operational  <---------
+
+
+Feb 08, 2018 5:52:32 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+Feb 08, 2018 5:52:32 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.5.Final}
+Feb 08, 2018 5:52:32 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+Feb 08, 2018 5:52:32 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+ * * * * * Session Factory Bean or better to call 'the Spring Container' has just been initalized * * * * * 
+
+
+Feb 08, 2018 5:52:32 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Feb 08, 2018 5:52:32 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
+Feb 08, 2018 5:52:32 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+Feb 08, 2018 5:52:32 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Feb 08, 2018 5:52:32 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000102: Fetching database metadata
+Feb 08, 2018 5:52:32 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000396: Updating schema
+Feb 08, 2018 5:52:32 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: SAURABH.PUBLIC.CATEGORY
+Feb 08, 2018 5:52:32 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [categorydescript, categoryname, categoryid]
+Feb 08, 2018 5:52:32 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+Feb 08, 2018 5:52:32 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary_key_3]
+Feb 08, 2018 5:52:32 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000232: Schema update complete
+(   (  ( (Transaction Tunnel has been opened for a Synchronized committed transaction with the H2 Database) )  )   )
+
+
+Feb 08, 2018 5:52:32 PM org.springframework.orm.hibernate4.HibernateTransactionManager afterPropertiesSet
+INFO: Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@618c5d94] of Hibernate SessionFactory for HibernateTransactionManager
+ We are inside Before Class intantiated object!!com.niit.dao.CategoryDAOImplement@7b324585
