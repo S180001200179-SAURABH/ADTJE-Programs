@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+  
+ 		<servlet>
+ 					<!-- ALLOCATING A SPECIFIC SERVLET CONTROLLER CLASS AND ASSIGNING IT A GIVEN NAME FOR THE PROJECT  -->
+ 					<servlet-name> dispatcher </servlet-name>
+ 					<servlet-class> org.springframework.web.servlet.DispatcherServlet </servlet-class>
+ 		</servlet>
+ 
+		<servlet-mapping>
+				<!--  MAPPING OF SPECIFIC CONTROLLER SERVLET  WITH ALL GENERIC URL REQUEST TYPES FOR THIS APPLICATION or PROJECT  -->
+ 				<!-- 	THIS MAPPING WILL OCCUR ONLY AFTER THE CONTROLLER SERVLET HAS BEEN LOADED FROM ITS LOCTION BY THE WEB SERVER CONTAINER  -->
+ 					<servlet-name> dispatcher </servlet-name>
+ 					<url-pattern> / </url-pattern>
+		 </servlet-mapping>
+		 
+		<context-param>
+				<!--  	HERE THE WEB SERVER CONTAINER 'CONTEXT' IS GOING TO REFER THIS ATTRIBUTE IN 'web.xml' AND THEN, . . -->
+				<!-- 	...INSTANTIATE A SPECIFIC CONTROLLER WITHIN THE PARAMETERS ALREADY PRESCRIBED FOR IT IN 'dispatcher-servlet.xml' FILE -->
+					<param-name>contextConfigLocation</param-name>
+					<param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
+		</context-param>
+		
+		<listener>
+						<listener-class>
+											org.springframework.web.context.ContextLoaderListener
+						</listener-class>
+		</listener>
+ 
+</web-app>
