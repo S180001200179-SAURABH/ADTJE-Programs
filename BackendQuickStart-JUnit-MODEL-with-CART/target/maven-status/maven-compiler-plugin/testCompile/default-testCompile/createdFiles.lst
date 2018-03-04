@@ -1,0 +1,6 @@
+com\niit\test\CategoryUnitTest.class
+com\niit\test\CartUnitTest.class
+com\niit\test\CustomerUnitTest.class
+com\niit\test\DemoDBConfigBackendTest.class
+com\niit\test\ProductUnitTest.class
+com\niit\test\SupplierUnitTest.class
