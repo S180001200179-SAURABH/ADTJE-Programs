@@ -1,0 +1,6 @@
+com\niit\controller\SupplierController.class
+com\niit\controller\ProductController.class
+com\niit\controller\CategoryController.class
+com\niit\controller\CartController.class
+com\niit\controller\GenericLoginUserSessionRoleController.class
+com\niit\controller\PageController.class
